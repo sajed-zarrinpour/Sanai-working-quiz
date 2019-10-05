@@ -1,0 +1,12 @@
+<h1>This Week Events :</h1>
+<div *ngFor="let ev of thisweekEvents">
+  <h2>{{ev.title}}</h2>
+
+    <p>
+      {{ev.description}}
+    </p>
+</div>
+
+<a [routerLink]="'/today'">today events</a>
+<br>
+<a [routerLink]="'/this-month'">this month events</a>
